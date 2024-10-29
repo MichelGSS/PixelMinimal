@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelMinimal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="title">PixelMinimal</h1>
+        <p class="subtitle">Um editor minimalista de arte em pixel!</p>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="contact.html">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Instruções de Uso -->
+    <div class="instructions" id="instructions">
+        <button class="close-btn" onclick="closeInstructions()">Fechar X</button>
+        <p><strong>Instruções:</strong></p>
+        <ul>
+            <li><b>Botão Esquerdo:</b> Pinta com a cor selecionada.</li>
+            <li><b>Botão Direito:</b> Pinta com a cor selecionada no botão direito.</li>
+            <li><b>Botão do Meio:</b> Apaga o pixel (borracha).</li>
+        </ul>
+    </div>
+
+    <!-- Controles de Grade -->
+    <div class="controls">
+        <label for="grid-width">Largura da Grade:</label>
+        <input type="number" id="grid-width" value="10" min="5" max="50">
+        <label for="grid-height">Altura da Grade:</label>
+        <input type="number" id="grid-height" value="10" min="5" max="50">
+        <label for="pixel-size">Tamanho do Pixel:</label>
+        <input type="number" id="pixel-size" value="20" min="5" max="50">
+        <button class="btn" onclick="createGrid()">Criar Grade</button>
+    </div>
+
+    <!-- Escolha de Cores -->
+    <div class="controls">
+        <label for="left-color">Cor Botão Esquerdo:</label>
+        <input type="color" id="left-color" value="#000000">
+        <label for="right-color">Cor Botão Direito:</label>
+        <input type="color" id="right-color" value="#ff0000">
+        <button class="btn" onclick="resetGrid()">Limpar Grade</button>
+    </div>
+
+    <!-- Grade de Arte -->
+    <div id="pixel-grid"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

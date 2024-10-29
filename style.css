@@ -1,0 +1,202 @@
+/* Estilo Geral */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #f8f9fa; /* Fundo branco suave */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #333;
+    animation: fadeIn 1.5s ease;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4caf50;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #45a049;
+}
+
+/* Estilo das Instruções */
+.instructions {
+    margin: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    width: 80%;
+    font-size: 12px;
+    position: relative;
+}
+
+.instructions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.instructions li {
+    margin: 5px 0;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.close-btn:hover {
+    background-color: #ff1a1a;
+}
+
+/* Estilo dos Controles */
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+#grid-width, #grid-height, #pixel-size {
+    width: 60px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+#color-picker, #left-color, #right-color {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Estilo da Grade de Pixels */
+#pixel-grid {
+    display: grid;
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    animation: fadeIn 2s;
+}
+
+.pixel {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    transition: background-color 0.1s;
+    cursor: pointer;
+}
+
+.pixel:hover {
+    border: 1px solid #ccc;
+}
+
+/* Estilo da Página de Contato */
+.contact-container {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    width: 80%;
+}
+
+.contact-container h2 {
+    margin-bottom: 20px;
+}
+
+.contact-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-container li {
+    margin: 10px 0;
+}
+
+.contact-container a {
+    color: #4caf50;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.contact-container a:hover {
+    color: #45a049;
+}
+
+/* Rodapé Fixo */
+footer {
+    margin-top: auto;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+}
+
+footer a {
+    color: #4caf50;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    color: #45a049;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
